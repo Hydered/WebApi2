@@ -1,0 +1,19 @@
+﻿@baseUrl = http://localhost:5197
+
+### Получить комнаты
+GET {{baseUrl}}/api/rooms
+Accept: application/json
+
+### Создать бронирование
+POST {{baseUrl}}/api/bookings
+Content-Type: application/json
+Accept: application/json
+
+{
+	"roomId": 1,
+	"employeeId": 1,
+	"startTime": "2030-05-20T10:00:00",
+	"endTime": "2030-05-20T11:00:00",
+	"participantsCount": 2,
+	"topic": "Проверка API"
+}
